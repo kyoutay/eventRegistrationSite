@@ -1,0 +1,56 @@
+select different options for conference 
+allow to select parts in conference they're interested in
+	keynote speech
+	career panel
+	techincal project presentations
+	k-12 project show-case
+cancellation fee function
+announcement email function - reminder email broadcast out
+a lot of database actions
+information display board for the conference or link to the conference
+	deadline - oct. 8
+a single page for registration
+
+bonus: payment fee - paypal
+
+can run on local computer or on some sort of web server
+
+to tell story features to help registering easier/unique, website accessibility
+	simple layout, minimal stimuli, clear error and success messages, 
+
+to do:
+registration conformation email: unique ID, barcode, etc. for ppl to show that they've registered in the system
+	add "checked in" column, qr code or unique ID updates this value
+admin page:
+	pw on adminLogin to get to admin page
+	announcement email - broadcast reminder email
+	google sheets/database actions on admin page
+about page: information board, link to conference, deadline- oct.8
+cancel page
+	unique code sent to email, use it to delete entry to database
+paypal
+	add message to tell user that once payed, can still register is messed up
+do the paypal registration multiple devices to make sure SUCCESS isn't still true on different devices
+
+
+
+done:
+log of people who deleted spot
+save information even when reloading form
+information of who to email on check status page
+added hints to accomodations box,affliation box
+included date and time
+email to inform that they've been registered/canceled spot
+email with qr code confirmation
+confirmation email to let people know their payment went through, unique qr code
+disable the form and paypal if max capacity is reached
+dont have to share how many seats left
+	hide registration button when no seats left
+
+add ms.chen to google sheets
+
+
+
+
+
+
