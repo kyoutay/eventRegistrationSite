@@ -12,8 +12,8 @@ ADMINMODE = False
 
 prs.configure({
   "mode": "sandbox", # sandbox or live
-  "client_id": "AVeXnptSLZNnylb5N0KrciujjZAhgrXliDkIrr-eYxxho6v5RqOwCJILa5pzISjzgi0DlkW8eDp6LcM_", #currently a sandbox client
-  "client_secret": "EK5rFV0u2C1V_qDW2o26KLe5pLl94m6ytxcC_Z4MUlAHcwcbVID3fUQ00XnMNkraQ6X3Nvv2Vv6dpegh" }) #paypal client secret
+  "client_id": "", #create a paypal sandbox account
+  "client_secret": "" }) 
 
 def sendEmail(title,message,recipients,imageLink=""):
     with mail.connect() as conn:
@@ -104,7 +104,7 @@ def adminLogin():
             ADMINMODE = False
     if not ADMINMODE:
         return render_template("adminLogin.html")
-    return render_template("adminPage.html", spotsLeft=sheets.getSpotsLeft(), registrantsSheet="https://docs.google.com/spreadsheets/d/1pnUBYHVmAc7pAGJPo4be1jCigypVV8yy3mpJX_ujD8E/edit#gid=0", canceledUsersSheet="https://docs.google.com/spreadsheets/d/1HEEyI-KINmwjYqegDQysGaEuqzeGmtK3mtiKgqnlAjg/edit#gid=0")
+    return render_template("adminPage.html", spotsLeft=sheets.getSpotsLeft(), registrantsSheet="", canceledUsersSheet="")
 
 @views.route("/broadcastEmail", methods=['GET','POST'])
 def broadcastEmail():
